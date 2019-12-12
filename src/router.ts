@@ -21,5 +21,15 @@ export default new Router({
       // which is lazy-loaded when the route is visited.
       component: () => import(/* webpackChunkName: "about" */ './views/About.vue'),
     },
+    {
+      path: '/qiye',
+      name: 'qiye',
+      component: () => import('./views/qiye.vue'),
+    },
+    {
+      path: '/list',
+      name: 'list',
+      component: () => import('./views/list.vue'),
+    },
   ],
 });
